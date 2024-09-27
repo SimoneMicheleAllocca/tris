@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+#gameTable {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: #6f42c1;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #5a32a6;
+    transform: translateY(-2px);
+}
+
+.modal {
+    display: none;
+}
+
+.modal-dialog {
+    margin: auto;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}

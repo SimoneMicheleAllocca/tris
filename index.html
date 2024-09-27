@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco del Tris</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">TRIS</h1>
+        <div class="form-group">
+            <label for="difficulty">Difficoltà:</label>
+            <select id="difficulty" class="form-control form-control-lg">
+                <option value="easy">Facile</option>
+                <option value="hard">Difficile</option>
+            </select>
+        </div>
+        <table class="mx-auto" id="gameTable">
+            <tbody>
+                <tr>
+                    <td class="cell" data-cell-index="0"></td>
+                    <td class="cell" data-cell-index="1"></td>
+                    <td class="cell" data-cell-index="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" data-cell-index="3"></td>
+                    <td class="cell" data-cell-index="4"></td>
+                    <td class="cell" data-cell-index="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" data-cell-index="6"></td>
+                    <td class="cell" data-cell-index="7"></td>
+                    <td class="cell" data-cell-index="8"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="status" class="mt-3"></div>
+        <button id="restartButton" class="btn mt-4">Riavvia</button>
+    </div>
+
+    <div class="modal" id="resultModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Risultato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="resultMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="restartModalButton">Riavvia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
